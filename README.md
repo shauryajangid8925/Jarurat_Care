@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🏥 Jarurat Care – Patient Records Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application built with **React** that allows healthcare professionals to manage patient records easily.  
+This project demonstrates practical skills in React, state management, API integration, and modern UI development.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Objective
+To assess proficiency in React, state handling, and API communication by building a feature-rich **patient records dashboard** application.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🏠 1. Landing Page
+- Simple header with the **Jarurat Care** logo and brand name.  
+- Navigation bar includes links to **Home**, **Patients**, and **About** pages.  
+- Clean and attractive hero section explaining the platform benefits.
 
-### `npm test`
+### 👩‍⚕️ 2. Patients Page (Main Focus)
+- Fetches patient data from an external public API (`JSONPlaceholder` users endpoint).  
+- Displays patient information (Name, Age, Contact details, Health Score) in a responsive card/grid layout.  
+- Implements a **search bar** to filter patients by name in real-time.  
+- Each patient card has a **View Details** button that opens a modal with full patient info.  
+- Dropdown menu on each patient card for quick actions — *Edit, Schedule Visit, Delete.*  
+- **Loading spinners** and **error messages** improve UX during API calls.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ⚙️ 3. State Management
+- Uses **React Hooks** (`useState`, `useEffect`, `useContext`) for state handling.  
+- Data fetching, search filtering, modal visibility, and patient selection managed cleanly.  
+- Global loading spinner implemented via **React Context API**.
 
-### `npm run build`
+### 🎨 4. UI & Styling
+- Fully **responsive design** adapting to desktop and mobile.  
+- Styled using **Tailwind CSS** and custom fonts.  
+- Includes **animated 3D backgrounds** using Three.js.  
+- Accessibility features: keyboard support and ARIA labels.  
+- Smooth modals and dropdowns with proper z-index & overlay control.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💡 5. Bonus (Optional Enhancements)
+- Add new patients via a local form (not connected to backend).  
+- Smooth global loader during API requests.  
+- Deployed on **Vercel/Netlify** for easy access.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📸 Screenshots
 
-### `npm run eject`
+### 🖥️ Desktop View
+| Home Page | Patients Page | About Page |
+|------------|----------------|-------------|
+| ![Home Desktop](./screenshots/home_desktop.png) | ![Patients Desktop](./screenshots/patients_desktop.png) | ![About Desktop](./screenshots/about_desktop.png) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📱 Mobile View
+| Home (Mobile) | Patients (Mobile) | About (Mobile) |
+|----------------|-------------------|----------------|
+| ![Home Mobile](./screenshots/home_mobile.png) | ![Patients Mobile](./screenshots/patients_mobile.png) | ![About Mobile](./screenshots/about_mobile.png) |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> All screenshots are taken directly from the live React app demonstrating responsiveness and UI consistency.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Installation & Setup
 
-## Learn More
+### 🧩 Pre-requisites
+- Node.js (>= 14.x)
+- npm or yarn package manager
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🪜 Steps
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/jarurat-care-dashboard.git
+cd jarurat-care-dashboard
 
-### Code Splitting
+# Install dependencies
+npm install
+# or
+yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start development server
+npm start
+# or
+yarn start
