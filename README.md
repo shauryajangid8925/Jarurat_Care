@@ -1,14 +1,15 @@
+<<<<<<< HEAD
 # 🏥 Jarurat Care – Patient Records Dashboard
 
 A modern, responsive web application built with **React** that allows healthcare professionals to manage patient records easily.  
 This project demonstrates practical skills in React, state management, API integration, and modern UI development.
 
----
+
 
 ## 🎯 Objective
 To assess proficiency in React, state handling, and API communication by building a feature-rich **patient records dashboard** application.
 
----
+
 
 ## ✨ Features
 
@@ -56,9 +57,7 @@ To assess proficiency in React, state handling, and API communication by buildin
 |----------------|-------------------|----------------|
 | ![Home Mobile](./screenshots/home_mobile.png) | ![Patients Mobile](./screenshots/patients_mobile.png) | ![About Mobile](./screenshots/about_mobile.png) |
 
-> All screenshots are taken directly from the live React app demonstrating responsiveness and UI consistency.
 
----
 
 ## ⚙️ Installation & Setup
 
@@ -70,7 +69,7 @@ To assess proficiency in React, state handling, and API communication by buildin
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/jarurat-care-dashboard.git
+git clone https://github.com/shauryajangid8925/Jarurat-Care-dashboard.git
 cd jarurat-care-dashboard
 
 # Install dependencies
@@ -82,3 +81,6 @@ yarn install
 npm start
 # or
 yarn start
+=======
+# Jarurat_Care
+>>>>>>> 2d6df27007bb8ce2f5ef8525983b679a5d98a36d
